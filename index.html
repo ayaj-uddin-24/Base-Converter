@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Base Convertor</title>
+
+    <!-- Bootstrap css file -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+      integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-dark d-flex justify-content-center align-items-center vh-100">
+    <div class="container bg-body p-3 rounded-2" style="width: 400px">
+      <h1 class="text-center pb-3">Base Convertor</h1>
+
+      <form action="#">
+        <label for="number" class="form-label">Enter number</label>
+        <input
+          type="text"
+          id="number"
+          name="number"
+          class="form-control"
+          required
+        />
+
+        <br />
+
+        <label for="from-base" class="form-label">From Base</label>
+        <select name="from-base" id="from-base" class="form-select">
+          <option value="select">Select Base</option>
+          <option value="2">2 (Binary)</option>
+          <option value="8">8 (Octal)</option>
+          <option value="10">10 (Decimal)</option>
+          <option value="16">16 (Hexadecimal)</option>
+        </select>
+
+        <br />
+
+        <label for="to-base" class="form-label">To Base</label>
+        <select name="to-base" id="to-base" class="form-select">
+          <option value="select">Select Base</option>
+          <option value="2">2 (Binary)</option>
+          <option value="8">8 (Octal)</option>
+          <option value="10">10 (Decimal)</option>
+          <option value="16">16 (Hexadecimal)</option>
+        </select>
+
+        <br />
+
+        <button type="submit" class="btn btn-success">Convert</button>
+        <button type="reset" class="btn btn-secondary">Reset</button>
+
+        <br /><br />
+
+        <label for="result" class="form-label">Result</label>
+        <input
+          type="text"
+          id="result"
+          name="result"
+          class="form-control"
+          disabled
+        />
+      </form>
+    </div>
+
+    <!-- Main js file -->
+    <script src="script.js"></script>
+  </body>
+</html>
